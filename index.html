@@ -1,14 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TriviaGame</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="utf-8">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+
+<body background="assets/images/triviab.jpg" style: "background-repeat: no-repeat">
+  <div class="container">
+
+    <div class="col-md-2" style="background-color: #0074D9; color: white;">
+
+      <h1 class="display-4">Trivia Game!!!!!</h1>
+      <p class="lead">Let see how much you know about our Solar System! Get ready, Set, GO!!!</p>
+
+    </div>
+
+    <div class="col-md-10" style="background-color: #7FDBFF; text-align: center;">
+      <h1 class="timeremaining startUp" style="display: none"></h1>
+    </div>
+    <br>
     
+    
+    <button class="startUp" id="startButton">Start</button>
+    <form class="startUp" id="quiz" name="quiz" style="display: none; background-color: #DDDDDD; text-align: center;">
+
+      <h3>How many inhabitants are in the world?</h3>
+
+      <input type="radio" name="question1" value="7.53b"> <span class="btntext">7.53b</span>
+      <input type="radio" name="question1" value="5.73b"> <span class="btntext">5.73b</span>
+      <input type="radio" name="question1" value="3.75b"> <span class="btntext">3.75b</span>
+      <input type="radio" name="question1" value="5.3b"> <span class="btntext">5.37b</span>
+
+      <h3>Which planet is the closest from the Sun?</h3>
+
+      <input type="radio" name="question4" value="Earth"> <span class="btntext">Earth</span>
+      <input type="radio" name="question4" value="Mercury"> <span class="btntext">Mercury</span>
+      <input type="radio" name="question4" value="Mars"> <span class="btntext">Mars</span>
+      <input type="radio" name="question4" value="Venus"> <span class="btntext">Venus</span>
+
+      <h3>How many planets are in the solar system?</h3>
+
+      <input type="radio" name="question2" value="10"> <span class="btntext">10</span>
+      <input type="radio" name="question2" value="8"> <span class="btntext">8</span>
+      <input type="radio" name="question2" value="9"> <span class="btntext">9</span>
+      <input type="radio" name="question2" value="11"> <span class="btntext">11</span>
+
+      <h3>Which planet is the farthest from the Sun?</h3>
+
+      <input type="radio" name="question3" value="Mars"> <span class="btntext">Mars</span>
+      <input type="radio" name="question3" value="Jupiter"> <span class="btntext">Jupiter</span>
+      <input type="radio" name="question3" value="Earth"> <span class="btntext">Earth</span>
+      <input type="radio" name="question3" value="Neptune"> <span class="btntext">Neptune</span>
+
+      <h3>How many planets has rings around it?</h3>
+
+      <input type="radio" name="question5" value="4"> <span class="btntext">4</span>
+      <input type="radio" name="question5" value="3"> <span class="btntext">3</span>
+      <input type="radio" name="question5" value="2"> <span class="btntext">2</span>
+      <input type="radio" name="question5" value="1"> <span class="btntext">1</span>
+      <br>
+      <input class="btn btn-primary submit-button" type="submit" value="Submit" style="float: right">
+    </form>
+    <div id="after_submit">
+      <p id="number-correct"></p>
+    </div>
+
+  </div>
+  <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
